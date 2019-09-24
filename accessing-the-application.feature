@@ -1,6 +1,6 @@
 Feature: Accessing the application
 
-  @ORPHAN
+  @TV-8 @OPEN
   Scenario: Viewing in a browser
     Given I am on a browser
     When I type http://localhost:48000 in the address bar
