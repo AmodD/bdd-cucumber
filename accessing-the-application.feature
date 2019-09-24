@@ -1,0 +1,1 @@
+Feature: Accessing the application
