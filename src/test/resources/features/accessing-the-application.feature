@@ -5,3 +5,4 @@ Feature: Accessing the application
     Given I am on a browser
     When I type http://localhost:48000 in the address bar
     Then I should see the home login page
+    And The title of the page should be "Fortiate Data Solutions" 
