@@ -1,6 +1,6 @@
 Feature: Login
 
-  @TV-8 @OPEN
+  @TV-8 @TV-4 @OPEN
   Scenario: Login using ID and Password
     Given I have entered http://localhost:48000 
     And I see the login page
