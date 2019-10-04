@@ -7,7 +7,7 @@ Feature: Login
     When I enter valid user ID and Password
     Then I should see the dashboard page
 
-  @ORPHAN
+  @TV-8 @OPEN
   Scenario: Login using Invalid ID and valid password
     Given I have entered http://localhost:48000 
     AND I see the login page
