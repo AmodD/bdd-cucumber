@@ -1,6 +1,6 @@
 Feature: Python Microservice to score a transaction
 
-  @ORPHAN
+  @TV-72 @OPEN
   Scenario: KNN Model
     Given Topic Parsed data has Processing Code(DE3 - bit 1 & 2)
     And Transaction Amount (DE4)
