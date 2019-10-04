@@ -5,7 +5,8 @@ import static org.junit.Assert.fail;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.*;
 
 import io.cucumber.java8.En;
 
@@ -19,9 +20,10 @@ public class GlueCode implements En {
 
 		Given("I am on a browser", () -> {
 		    // Write code here that turns the phrase above into concrete actions
-			System.setProperty("webdriver.chrome.driver", "chromedriver");
-			driver = new ChromeDriver();
-
+			//System.setProperty("webdriver.chrome.driver", "chromedriver");
+			//driver = new ChromeDriver();
+			System.setProperty("webdriver.gecko.driver","geckodriver");
+			driver =new FirefoxDriver();
 			
 			//throw new cucumber.api.PendingException();
 		});

@@ -4,7 +4,7 @@ target/
 !**/src/main/**
 !**/src/test/**
 chromedriver
-
+geckodriver
 ### STS ###
 .apt_generated
 .classpath
