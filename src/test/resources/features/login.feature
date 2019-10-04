@@ -14,7 +14,7 @@ Feature: Login
     When I enter invalid user ID and valid Password
     Then I should see an error message "Invalid credentials"
 
-  @ORPHAN
+  @TV-8 @OPEN
   Scenario: Login using Valid ID and Invalid Password
     Given I have entered http://localhost:48000 
     AND I see the login page
