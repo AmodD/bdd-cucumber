@@ -1,6 +1,6 @@
 Feature: Login
 
-  @ORPHAN
+  @TV-8 @OPEN
   Scenario: Login using ID and Password
     Given I have entered http://localhost:48000 
     AND I see the login page
