@@ -2,7 +2,7 @@ Feature: Python Microservice to score a transaction
 
   @TV-72 @OPEN
   Scenario: KNN Model
-    Given KNN model
+    Given I have a KNN model
     When Topic Parsed data has following features Processing Code(DE3 - bit 1 & 2)
     And Transaction Amount (DE4)
     And POS Entry Mode (DE22)
