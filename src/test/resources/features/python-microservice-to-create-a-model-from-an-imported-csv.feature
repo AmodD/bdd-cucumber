@@ -6,7 +6,7 @@ Feature: Python Microservice to create a model from an imported csv
     When I import a CSV file
     Then I have a KNN model
 
-  @ORPHAN
+  @TV-82 @OPEN
   Scenario: Create a K-Means Model
     Given I have a CSV file
     When I import a CSV file
