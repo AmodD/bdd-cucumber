@@ -1,4 +1,4 @@
-Feature: Accessing the application
+Feature: TV in various browsers
 
   @TV-8 @OPEN
   Scenario: Viewing in a Chrome browser
