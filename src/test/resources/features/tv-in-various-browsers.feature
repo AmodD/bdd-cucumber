@@ -1,5 +1,7 @@
 Feature: TV in various browsers
 
+  compatibility check to see if the TV application opens up in different browsers
+
   @TV-8 @OPEN
   Scenario: Viewing in a Chrome browser
     Given I am on a Chrome browser
