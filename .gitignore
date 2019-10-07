@@ -5,7 +5,10 @@ target/
 !**/src/test/**
 chromedriver
 geckodriver
+<<<<<<< HEAD
 
+=======
+>>>>>>> ef0511c509100c800318dfb358f9320772f730ed
 ### STS ###
 .apt_generated
 .classpath

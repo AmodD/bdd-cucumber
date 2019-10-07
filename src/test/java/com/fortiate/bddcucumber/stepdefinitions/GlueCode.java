@@ -20,21 +20,16 @@ public class GlueCode implements En {
 
 	public GlueCode() {
 		
-		Given("I am on a browser", () -> {
-		    // Write code here that turns the phrase above into concrete actions
+		Given("I am on Chrome a browser", () -> {
 			System.setProperty("webdriver.chrome.driver", "chromedriver");
 			driver = new ChromeDriver();
 		});
 
 		When("I type http:\\/\\/localhost:{int} in the address bar", (Integer int1) -> {
-		    // Write code here that turns the phrase above into concrete actions
 		    driver.navigate().to("http://localhost:48000");
-
 		});
 
-		Then("I should see the home login page", () -> {
-		    // Write code here that turns the phrase above into concrete actions
-			
+		Then("I should see the product login page", () -> {
 			try {
 			WebElement pageContent = driver.findElement(By.xpath("//*[text()='This site can’t be reached']"));
 			
@@ -49,6 +44,11 @@ public class GlueCode implements En {
 				assertTrue("Site was reachable",true);
 			}
 		    
+		});
+		
+		Given("I am on a Firefox browser", () -> {
+			System.setProperty("webdriver.gecko.driver","geckodriver");
+			driver =new FirefoxDriver();
 		});
 		
 	}
