@@ -1,4 +1,4 @@
-@WIP
+@TODO
 Feature: TV in various browsers
   
   compatibility check to see if the TV application opens up in different browsers
