@@ -76,7 +76,7 @@ public class GlueCode implements En {
 			WebElement pwdmsg = driver.findElement(By.id("passworderror"));
 			pwdmsg.getText();
 			
-			//driver.findElement(By.name("button")).click();
+			driver.findElement(By.name("button")).click();
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 					
 });
