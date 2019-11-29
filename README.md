@@ -5,8 +5,10 @@
 ```
 mvn test
 ```
-#gecko driver for firefox
-Download the gecko driver using below link
+
+## geckodriver for firefox
+
+download gecko driver from below link 
 https://github.com/mozilla/geckodriver/releases
 
-and extract save it in chp-dbservice
+extract and save it in bdd-cucumber folder

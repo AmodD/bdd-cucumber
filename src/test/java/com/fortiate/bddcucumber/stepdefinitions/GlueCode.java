@@ -22,7 +22,7 @@ public class GlueCode implements En {
 	public GlueCode() {
 
 		Given("I have entered http://localhost:48000", () -> {
-			System.setProperty("webdriver.gecko.driver", "/bdd-cucumber/geckodriver");
+			System.setProperty("webdriver.gecko.driver", "geckodriver");
 			 driver = new FirefoxDriver();
 			//driver.navigate().to("http://localhost:48000");
 		
