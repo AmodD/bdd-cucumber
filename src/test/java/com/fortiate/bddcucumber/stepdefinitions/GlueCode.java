@@ -4,6 +4,7 @@ package com.fortiate.bddcucumber.stepdefinitions;
 
 import java.util.concurrent.TimeUnit;
 
+import org.junit.Assert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 
@@ -41,27 +42,32 @@ public class GlueCode implements En {
 		When("I enter valid user ID and Password", () -> {
 	
 			driver.findElement(By.name("email")).sendKeys("amit@fortiate.com");
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(2000);	  
 			driver.findElement(By.name("password")).sendKeys("abcdef12");
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		  
+			
+			
 		});	
 
 		Then("I should see the dashboard page", () -> {
 			driver.findElement(By.name("button")).click();
-			
+			Thread.sleep(2000);	  
+			driver.close();
 			});
 
 
 	   When("I enter invalid user ID and valid Password", () -> {
 			driver.findElement(By.name("email")).sendKeys("gfdgfdgdfgdfgfddfg");
 			driver.findElement(By.name("password")).sendKeys("abcdef12");
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(2000);	  
+		
         });
 	   
 	   When("I enter valid user ID and invalid Password", () -> {
 			driver.findElement(By.name("email")).sendKeys("amit@fortiate.com");
 			driver.findElement(By.name("password")).sendKeys("hghghghjghjgjghg");
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			Thread.sleep(2000);	  
+		
 		
        });
          
@@ -70,20 +76,21 @@ public class GlueCode implements En {
 		
 			
 			 
-	         WebElement emailmsg = driver.findElement(By.id("emailerror"));
-	         emailmsg.getText();
-			
+			WebElement emailmsg = driver.findElement(By.id("emailerror"));
+		    emailmsg.getText();
+			Thread.sleep(2000);	   
 			WebElement pwdmsg = driver.findElement(By.id("passworderror"));
 			pwdmsg.getText();
-			
+			Thread.sleep(2000);
 			driver.findElement(By.name("button")).click();
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+			driver.close();
+
 					
 });
 	
 		
 	}
-
+	
 }
 	
 
