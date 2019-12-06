@@ -7,7 +7,7 @@
 + [Output](#output) 
 + [Getting the code](#getting_the_code)
 + [How To Run](#how_to_run)
-+ [How To Access](#how_to_access)
+
 
 <a name="introduction"/>
 
@@ -47,6 +47,7 @@ login-ui : https://github.com/fortiate/login-ui
     cd projects/FORTIATE/BUILD/WORKSPACES/JAVA/bdd-cucumber
     git clone https://github.com/fortiate/bdd-cucumber.git
 
+## How to Run
 
 type to below command to run all the tests 
 
