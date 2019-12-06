@@ -19,6 +19,16 @@ import io.cucumber.java8.En;
 public class GlueCode implements En {
 
 	private WebDriver driver;
+	
+		/*Given("I am on a Chrome browser", () -> {
+			System.setProperty("webdriver.chrome.driver", "chromedriver");
+			driver = new ChromeDriver();
+		});
+
+		  Then("I should see the product login page", () -> {
+		assertEquals("Fortiate Data Solutions",driver.getTitle());
+		});
+		});*/
 
 	public GlueCode() {
 
