@@ -3,7 +3,7 @@
 ##### Table of Contents  
 + [Introduction](#introduction) 
 + [Prerequisite](#prerequisite) 
-+ [Dependency] (#dependency)
++ [Dependency](#dependency)
 + [Output](#output) 
 + [Getting the code](#getting_the_code)
 + [How To Run](#how_to_run)
